@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true
+  },
+  "plugins": ["react", "jsx-a11y", "import"],
+  "extends": "airbnb",
+  "rules": {
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "global-require": "off",
+    "import/prefer-default-export": "off",
+    "import/no-named-as-default": "off",
+    "no-shadow": "off",
+    "react/prop-types": "off",
+    "semi": ["error", "never"],
+    "no-use-before-define": "off",
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
+  }
+}
