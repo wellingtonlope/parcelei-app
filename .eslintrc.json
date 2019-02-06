@@ -19,6 +19,8 @@
     "react/prop-types": "off",
     "semi": ["error", "never"],
     "no-use-before-define": "off",
-    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+    "react/no-access-state-in-setstate": "off",
+    "no-plusplus": "off"
   }
 }
