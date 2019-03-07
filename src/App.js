@@ -10,6 +10,7 @@ import IRR from './constants/IRR'
 class App extends Component {
   state = {
     taxMonth: 0,
+    total: 0,
     financingValue: '',
     plotValue: '',
     plotAmount: '',
@@ -37,8 +38,11 @@ class App extends Component {
     if (taxMonth === '#NUM!') taxMonth = 0
     taxMonth *= 100
 
+    const total = value * plot
+
     this.setState({
       taxMonth,
+      total,
     })
   }
 
@@ -48,12 +52,12 @@ class App extends Component {
 
   render() {
     const {
-      taxMonth, financingValue, plotValue, plotAmount,
+      taxMonth, total, financingValue, plotValue, plotAmount,
     } = this.state
     return (
       <View style={styles.wrapper}>
         <StatusBar backgroundColor={colors.primaryDark} barStyle="light-content" />
-        <Info taxMonth={taxMonth} toDefault={this.toDefaultBr} />
+        <Info taxMonth={taxMonth} total={total} toDefault={this.toDefaultBr} />
         <Calculate
           financingValue={financingValue}
           plotValue={plotValue}

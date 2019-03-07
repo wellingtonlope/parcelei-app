@@ -3,12 +3,12 @@ import { View, Text, StyleSheet } from 'react-native'
 
 import colors from '../constants/colors'
 
-const Info = ({ taxMonth, toDefault }) => (
+const Info = ({ taxMonth, total, toDefault }) => (
   <View style={styles.wrapper}>
     <View style={styles.circle}>
       <Text style={styles.title}>Taxa mensal</Text>
       <Text style={styles.taxMonth}>{`${toDefault(taxMonth)}%`}</Text>
-      <Text style={styles.taxTotal} />
+      <Text style={styles.taxTotal}>{`Total: R$${toDefault(total)}`}</Text>
     </View>
   </View>
 )
