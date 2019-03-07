@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { Text, TouchableOpacity } from 'react-native'
 import renderer from 'react-test-renderer'
 
 import Button from '../../src/components/Button'
@@ -21,7 +21,7 @@ describe('<Button />', () => {
   it('should call onPress', () => {
     const onPress = jest.fn()
     const instance = renderer.create(<Button onPress={onPress} />).root
-    instance.props.onPress()
+    instance.findByType(TouchableOpacity).props.onPress()
     expect(onPress).toHaveBeenCalled()
   })
 })
