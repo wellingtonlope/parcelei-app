@@ -12,12 +12,12 @@ Atualizando dependências:
 npm install
 ```
 
-Para subir um servidor local para desenvolvimento:
+Subir um servidor local para desenvolvimento:
 ```shell 
 npm start
 ```
 
-Rodar projeto:
+Executar projeto:
 ```shell 
 react-native run-android
 ```
