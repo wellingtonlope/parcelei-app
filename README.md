@@ -1,7 +1,7 @@
 # Parcelei
 
 ## O Projeto Parcelei
-Aplicativo construido em react native, onde o usuário consegue obter a taxa de juros de um financiamento.
+Aplicativo construido em react native, onde o usuário poderá obter a taxa de juros de um financiamento.
 
 ## Configurações
 
