@@ -8,8 +8,8 @@ const Info = ({ taxMonth, total }) => (
   <View style={styles.wrapper}>
     <View style={styles.circle}>
       <Text style={styles.title}>Taxa mensal</Text>
-      <Text style={styles.taxMonth}>{`${format('#.###,00', taxMonth)}%`}</Text>
-      <Text style={styles.taxTotal}>{`Total: R$${format('#.###,00', total)}`}</Text>
+      <Text style={styles.taxMonth}>{`${taxMonth === 0 ? '0,00' : format('#.###,00', taxMonth)}%`}</Text>
+      <Text style={styles.taxTotal}>{`Total: R$${total === 0 ? '0,00' : format('#.###,00', total)}`}</Text>
     </View>
   </View>
 )
