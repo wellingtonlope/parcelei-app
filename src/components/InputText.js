@@ -18,7 +18,7 @@ const InputText = ({
         placeholder={placeholder}
         keyboardType="numeric"
         onChangeText={onChange}
-        placeholderTextColor={colors.textPrimary}
+        placeholderTextColor={colors.textTernary}
         underlineColorAndroid="transparent"
       />
     )}
@@ -30,7 +30,7 @@ const InputText = ({
         placeholder={placeholder}
         keyboardType="numeric"
         onChangeText={onChange}
-        placeholderTextColor={colors.textPrimary}
+        placeholderTextColor={colors.textTernary}
         underlineColorAndroid="transparent"
       />
     )}

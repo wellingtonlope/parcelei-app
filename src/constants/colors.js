@@ -4,4 +4,5 @@ export default {
   primaryDark: '#4b307b',
   textPrimary: '#fff',
   textSecondary: '#eaeaea',
+  textTernary: '#afafaf',
 }

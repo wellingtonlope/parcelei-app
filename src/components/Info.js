@@ -1,14 +1,15 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import format from 'number-format.js'
 
 import colors from '../constants/colors'
 
-const Info = ({ taxMonth, total, toDefault }) => (
+const Info = ({ taxMonth, total }) => (
   <View style={styles.wrapper}>
     <View style={styles.circle}>
       <Text style={styles.title}>Taxa mensal</Text>
-      <Text style={styles.taxMonth}>{`${toDefault(taxMonth)}%`}</Text>
-      <Text style={styles.taxTotal}>{`Total: R$${toDefault(total)}`}</Text>
+      <Text style={styles.taxMonth}>{`${format('#.###,00', taxMonth)}%`}</Text>
+      <Text style={styles.taxTotal}>{`Total: R$${format('#.###,00', total)}`}</Text>
     </View>
   </View>
 )
